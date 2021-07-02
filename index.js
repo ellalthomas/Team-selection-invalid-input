@@ -9,18 +9,17 @@ let players = ['Lucy', 'Alex', 'Lily', 'Ella', 'Charlie', 'Grace', 'George', 'Zo
 let playerNumbers = prompt('how many players does each team need?')
 
 // coping with valid, invalid and boudary input
-    while (playerNumbers > (players.length/2)||isNaN(playerNumbers)|| playerNumbers == null || playerNumbers == '' ||playerNumbers == ' '){
+    while (playerNumbers > (players.length/2)||isNaN(playerNumbers) || playerNumbers == '' ||playerNumbers == ' '){
       console.log('Sorry that is invalid. Pick a number from 1 - 6')
-      playerNumbers = prompt('how many players would you like?')  }
+      playerNumbers = prompt('how many players would you like?')  
+      }
 
-
-
-let length = players.length
 
 //having two empty teams waiting to have players added
 let team1 = [];
 let team2 = [];
 let round = 1;
+let length = players.length
 
 //pick a random member from 'players' list
 do {
